@@ -431,13 +431,11 @@ body {
   fill: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .signup-form
-{
+.footer .signup-form {
   display: flex;
   margin-left: 78px;
 }
-.footer .signup-form label
-{
+.footer .signup-form label {
   display: flex;
   flex-direction: column;
   margin-top: 72px;
@@ -449,17 +447,40 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
-.footer .signup-form label input
-{
+.footer .signup-form label input {
   min-width: 378px;
   min-height: 50px;
   margin-top: 20px;
+  background-color: var(--color-header-footer);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
-.footer .signup-form button
-{
+.footer .signup-form button {
   margin: 108px 215px 94px 12px;
   min-height: 50px;
   min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--color-background);
+  fill: var(--color-background);
+  border: none;
+}
+.footer .signup-form button svg {
+  margin-left: 24px;
 }
 /*finish our-customers */
 .footer {
