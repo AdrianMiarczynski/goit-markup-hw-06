@@ -442,6 +442,7 @@ body {
   flex-direction: column;
   margin-top: 72px;
   color: var(--color-background);
+  /* color: transparent; */
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
@@ -755,6 +756,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .modal-form #user-name,
 .modal-form #telephone,
 .modal-form #email {
@@ -765,7 +767,21 @@ body {
   min-height: 40px;
   margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  padding-left: 42px;
+}
+.modal-form label,
+.modal-form #user-name input
+{
+  position: relative;
+}
+.modal-form .form-icon
+{
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  justify-content: center;
+  text-align: center;
 }
 #modal-text-area {
   margin-bottom: 20px;
