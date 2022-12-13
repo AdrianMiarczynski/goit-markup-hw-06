@@ -825,6 +825,7 @@ body {
 .modal-checkbox
 {
   display: flex;
+  position: relative;
 }
 #agreement
 {
