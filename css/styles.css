@@ -757,9 +757,9 @@ body {
   flex-direction: column;
 }
 
-.modal-form #user-name,
-.modal-form #telephone,
-.modal-form #email {
+.modal-form .user-input,
+.modal-form .telephone-input,
+.modal-form .email-input {
   min-width: 448px;
   color: var(--color-almost-black);
   border: 1px solid var(--color-modal-input);
@@ -770,8 +770,21 @@ body {
   position: relative;
   padding-left: 42px;
 }
+.modal-form label:focus-within,
+.modal-form label:focus,
+.modal-form label:active
+{
+  fill: var(--color-blue);
+}
+.modal-form input:focus,
+.modal-form input:active,
+.modal-form input:hover
+{
+  border: 1px solid var(--color-blue);
+  outline: none;
+}
 .modal-form label,
-.modal-form #user-name input
+.modal-form .user-input input
 {
   position: relative;
 }
@@ -783,7 +796,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-#modal-text-area {
+.modal-text-area {
   margin-bottom: 20px;
   resize: none;
   max-width: 448px;
@@ -798,6 +811,13 @@ body {
   font-weight: 400;
   /*color: var(--color-text-area);
   opacity: 0,12; */
+}
+.modal-text-area:hover,
+.modal-text-area:active,
+.modal-text-area:focus
+{
+  border: 1px solid var(--color-blue);
+  outline: none;
 }
 .modal-checkbox
 {
