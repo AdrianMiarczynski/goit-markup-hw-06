@@ -481,6 +481,7 @@ body {
   color: var(--color-background);
   fill: var(--color-background);
   border: none;
+  cursor: pointer;
 }
 .footer .signup-form button svg {
   margin-left: 24px;
