@@ -839,7 +839,7 @@ body {
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
   fill: var(--color-background);
-  border-radius: 1px;
+  border-radius: 2px;
 } */
 #agreement {
   min-width: 15px;
